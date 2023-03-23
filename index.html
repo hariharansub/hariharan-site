@@ -1,137 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Component Library</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Hariharan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navigation container">
+    <div class="nav-brand">IamDeveloper</div>
+    <ul class="list-non-bullet nav-items">
+      <li class="list-item-inline">
+        <a href="/index.html" class="link link-active">Home</a>
+      </li>
+      <li class="list-item-inline">
+        <a href="/" class="link">Projects</a>
+      </li>
+      <li class="list-item-inline">
+        <a href="/" class="link">Blogs</a>
+      </li>
+    </ul>
+  </nav> 
+  
+  <header class="hero">
+    <img class="hero-img" src="/images/reactjs.svg" />
+    <h1 class="hero-heading">Hariharan the <span class="hero-inverted"> Web developer</span></h1>
+  </header>
 
-  <body>
-    <h1>Component library</h1>
-    <div>
-      Just creating a component library here so that i could learn html and all
-      its underlying tags and attributes.
-    </div>
-
-    <hr />
-
-    <h2>@Typography</h2>
-
-    <h1>This is the biggest text</h1>
-    <h2>This is the second biggest text</h2>
-    <p>
-      This is the normal text containing within a container. Containers are tags
-      that don't perform any function but are there just to contain information
-    </p>
-    <p>This paragraph will have a <strong>bold</strong> text !</p>
-    <small>This is relatively a smaller text</small>
-
-    <hr />
-
-    <h2>@containers</h2>
-
-    <h3>@fluid container</h3>
-    <div class="container">
-      This is a fluid container. The lines will only break at the end of line.
-    </div>
-    <h3>@center container</h3>
+  <section class="section ow">
     <div class="container container-center">
-        This is a center container. The content within this tag will be aligned
-        centrally !
+      <h1>Technologies</h1>
+      <p>I started my career as a backend developer
+        working on developing REST APIs using spring boot.
+        I have experience in integrating microservices with 
+        message queues such as IBM MQ. I also have hands on
+        experience writing SQL queries according to business
+        requirements. Apart from backend technologies, I also
+        have experience working in front end projects involving
+        mobile application development using React Native.
+        While working on react native, I grew more interested in
+        frontend development which got me learning reactjs. I will be
+        adding the projects that I have worked on so far here
+        on my website.</p>
+        <p>Please feel free to get in touch with me
+        regarding anything related to web development and I will
+        be happy to connect.</p>
     </div>
+  </section>
 
-    <hr />
+  <section class="section">
+    <div class="container container-center">
+      <h1>Projects</h1>
+      <p>I like to showcase my work and thus, you can see
+        my projects hosted online.
+      </p>
+      <a href="/" class="link link-primary">See projects</a>
+    </div>
+  </section>
 
-    <h2>@links</h2>
+  <section class="section ow">
+    <div class="container container-center">
+      <h1>Blogs</h1>
+      <p>Apart from the technical journey that I have undertaken
+        with web development, I will also be writing blogs detailing
+        my journey and on topics that I find interesting.
+      </p>
+      <a href="/" class="link link-secondary">Read Blogs</a>
+    </div>
+  </section>
 
-    <a href="/" class="link link-primary">Primary link</a>
-    <a href="/" class="link link-secondary">Secondary link</a>
-
-    <hr />
-
-    <h2>@Lists</h2>
-
-    <h3>Unordered list</h3>
-    <ul class="list-non-bullet">
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
+  <footer class="footer">
+    <div class="footer-header">Social media presence</div>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline"><a class="link" href="/">LinkedIn</a></li>
+        <li class="list-item-inline"><a class="link" href="/">Twitter</a></li>
+        <li class="list-item-inline"><a class="link" href="/">Github</a></li>
     </ul>
+</footer>
 
-    <h3>Inline unordered list</h3>
-    <ul class="list-non-bullet">
-      <li class="list-item-inline">Inline item 1</li>
-      <li class="list-item-inline">Inline item 2</li>
-      <li class="list-item-inline">Inline item 3</li>
-    </ul>
 
-    <h3>Reverse ordered list</h3>
-    <ol reversed>
-      <li>Milk</li>
-      <li>Eggs</li>
-      <li>Bread</li>
-    </ol>
-
-    <hr />
-
-    <h3>@nav</h3>
-
-    <nav class="navigation container">
-      <div class="nav-brand">IamDeveloper</div>
-      <ul class="list-non-bullet nav-items">
-        <li class="list-item-inline">
-          <a href="/" class="link link-active">Home</a>
-        </li>
-        <li class="list-item-inline">
-          <a href="/" class="link">Products</a>
-        </li>
-        <li class="list-item-inline">
-          <a href="/" class="link">About</a>
-        </li>
-      </ul>
-    </nav>
-
-    <hr />
-
-    <h2>@Header</h2>
-
-    <header class="hero">
-      <img class="hero-img" src="images/reactjs.svg" />
-      <h1 class="hero-heading">Hariharan the <span class="hero-inverted"> Web developer</span></h1>
-    </header>
-
-    <hr>
-
-    <h2>@section</h2>
-
-    <section class="section">
-      <div class="container container-center">
-        <h1>white section</h1>
-        <p>It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there.</p>
-      </div>
-    </section>
-
-    <section class="section ow">
-      <div class="container container-center">
-        <h1>Off white section</h1>
-        <p>It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to make your own simple website online, so we'll start there.</p>
-      </div>
-    </section>
-
-    <hr>
-
-    <h2>@footer</h2>
-
-    <footer class="footer">
-        <div class="footer-header">Some small heading inside footer</div>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline"><a class="link" href="/">socialone</a></li>
-            <li class="list-item-inline"><a class="link" href="/">socialtwo</a></li>
-            <li class="list-item-inline"><a class="link" href="/">socialthree</a></li>
-        </ul>
-    </footer>
-
-  </body>
+</body>
 </html>
